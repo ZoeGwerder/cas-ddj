@@ -1,0 +1,3 @@
+file = open('DEIN_FOLDER/DEIN_FILE.html', 'r')
+text = file.read()
+Soup = BeautifulSoup(text, 'html.parser')
