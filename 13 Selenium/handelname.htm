@@ -1,0 +1,337 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/bootstrap/css/bootstrap.min.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/font-awesome/4.7.0/css/font-awesome.min-jsf.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=webjars"><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/css/cr-business-web-portal.min.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/css/cr-business-web-core.min.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/css/zg.min.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/primefaces.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=primefaces&amp;v=4.0"><script type="text/javascript" src="/cr-portal/javax.faces.resource/jquery/jquery.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=primefaces&amp;v=4.0"></script><script type="text/javascript" src="/cr-portal/javax.faces.resource/jquery/jquery-plugins.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=primefaces&amp;v=4.0"></script><script type="text/javascript" src="/cr-portal/javax.faces.resource/primefaces.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=primefaces&amp;v=4.0"></script><link type="text/css" rel="stylesheet" href="/cr-portal/javax.faces.resource/theme-overrides.css.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=primefaces-cr-business">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate, max-age=0">
+		<meta http-equiv="expires" content="0">
+		<title>Cantonal company search, Commercial register of canton Zug</title>
+		<meta name="description" content="Official commercial register information of the Canton of Zug">
+
+		<meta property="og:title" content="Cantonal company search, Commercial register of canton Zug">
+		<meta property="og:description" content="Official commercial register information of the Canton of Zug">
+		<meta property="og:url" content="https://zg.chregister.ch">
+
+    <meta property="og:site_name" content="Commercial register of canton Zug">
+    <meta property="og:image" content="https://zg.chregister.ch/cr-portal/javax.faces.resource/images/logo/ZG-logo.png.xhtml?ln=default">
+
+    <meta name="author" content="DV Bern AG">
+
+    
+    <link rel="icon" href="/cr-portal/resources/default/images/favicon/ZG-favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="/cr-portal/resources/default/images/favicon/ZG-favicon.ico"></head><body style=""><div id="j_idt16" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow modal-content modal-loading" role="dialog" aria-labelledby="j_idt16_title" aria-hidden="true" style="width: auto; height: auto;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top" style=""><span id="j_idt16_title" class="ui-dialog-title"></span></div><div class="ui-dialog-content ui-widget-content" style="height: auto;">
+        <div class="modal-loading-spinner"></div></div></div>
+
+    <script type="text/javascript">
+        function showStatus() {
+            statusDialogOnRequest.show();
+        }
+
+        function hideStatus() {
+            statusDialogOnRequest.hide();
+        }
+    </script><span id="firmaAuszugPanel"></span><div class="wrap stickyPaddingBottom">
+<form id="idPortalForm" name="idPortalForm" method="post" action="/cr-portal/suche/suche.xhtml;jsessionid=3e39718e9d33b120d32f3268a725" class="form-horizontal" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="idPortalForm" value="idPortalForm">
+
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-sm hidden-print">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>&nbsp;
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <li class="menu-Suche active"><a id="idPortalForm:j_idt39" href="#" class="ui-commandlink ui-widget fa fa-search" aria-label="Cantonal search" onclick="PrimeFaces.ab({source:'idPortalForm:j_idt39'});return false;" title="Cantonal search">
+                            <span>Cantonal search
+							</span></a>
+                    </li>
+
+                    
+                    <li class="menu-Auszug">
+                    </li>
+                        <li class="menu-Bestellung">
+                        </li>
+
+                    
+                    <li><a href="/cr-portal/impressum/impressum.xhtml;jsessionid=3e39718e9d33b120d32f3268a725" title="Contact" class="fa fa-envelope-o">
+                            <span>Contact</span></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle fa fa-globe" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    <span>English
+                                    </span>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+									<li><a id="idPortalForm:j_idt234" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({source:'idPortalForm:j_idt234',oncomplete:function(xhr,status,args){window.location.replace(window.location.href);;}});return false;">Deutsch</a></li>
+									<li><a id="idPortalForm:j_idt59" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({source:'idPortalForm:j_idt59',oncomplete:function(xhr,status,args){window.location.replace(window.location.href);;}});return false;">Français</a></li>
+									<li><a id="idPortalForm:j_idt62" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({source:'idPortalForm:j_idt62',oncomplete:function(xhr,status,args){window.location.replace(window.location.href);;}});return false;">Italiano</a></li>
+							</ul>
+						</li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<script type="text/javascript">
+		function startWebshop() {
+			var form = document.createElement("form");
+			form.setAttribute("method", "post");
+			form.setAttribute("action", "");
+			form.appendChild(createElement("data.BEST_Firma_V2_0.JPERS",""));
+			form.appendChild(createElement("data.BEST_Firma_V2_0.FIRMENSITZ",""));
+			form.appendChild(createElement("data.BEST_Firma_V2_0.Firmennummer",""));
+			form.appendChild(createElement("data.BEST_Firma_V2_0.BEST_Rechtsform",""));
+			form.appendChild(createElement("event","view"));
+			form.appendChild(createElement("generalid","AJU_BEST"));
+			document.body.appendChild(form);
+			form.submit();
+		}
+
+		function createElement(name, value) {
+			var element = document.createElement("input");
+			element.setAttribute("type", "hidden");
+			element.setAttribute("name", name);
+			element.setAttribute("value", value);
+			return element;
+		}
+	</script>
+
+    <div class="container">
+
+        <header id="firmaHeader">
+                <a href="/cr-portal/"><img id="idPortalForm:j_idt71" src="/cr-portal/javax.faces.resource/images/logo/ZG-logo.png.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default" alt="Commercial register of canton Zug">
+                </a>
+            <h1 id="defaultHeader">Commercial register
+            </h1>
+
+            <h3 style="margin-left: 20px; margin-bottom: 20px"></h3>
+
+            <h1 id="headerOnNewLine">Commercial register
+            </h1>
+
+
+            <div class="headerSubLine"></div>
+        </header>
+
+        <div class="sub-header"><div id="idPortalForm:j_idt86" class="ui-outputpanel ui-widget">
+                <h2>Official commercial register information of the Canton of Zug
+                </h2></div>
+        </div>
+
+    </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="4127173450772461269:-8387170814492735491" autocomplete="off">
+</form>
+            <div class="container">
+			<div class="page-header">
+				<h3>Welcome</h3>
+				<p>Welcome to the company search engine of the commercial register of the Canton of Zug. This portal allows you to find the published data of all companies in our department. This includes in particular the legal form, purpose and registered persons. The data can be displayed or downloaded directly in the browser or as a PDF file. Please note that extracts are made available on this portal without guarantee and are not legally binding. However, you have the option of ordering commercial register extracts which are certified by us and therefore legally binding. To do this, please use the order form.
+				</p>
+			</div>
+
+<form id="idSucheForm" name="idSucheForm" method="post" action="/cr-portal/suche/suche.xhtml" class="form-horizontal" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="idSucheForm" value="idSucheForm">
+
+
+			<a id="menu-Suche" name="content" href="#" class="menu-identifier">Cantonal search</a>
+
+    <div class="form-group">
+        <div class="col-sm-12"><div id="idSucheForm:j_idt104" class="ui-messages ui-widget" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <div class="form-group"><label id="idSucheForm:j_idt106" class="ui-outputlabel ui-widget control-label col-sm-2" for="idSucheForm:idFirma">Company</label>
+		<div class="col-sm-6"><input id="idSucheForm:idFirma" name="idSucheForm:idFirma" type="text" placeholder="Search for company, company number etc." class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control ui-state-focus" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"><span id="idSucheForm:j_idt108"></span><script type="text/javascript">$(function(){PrimeFaces.focus('idSucheForm:idFirma');});</script>
+        </div>
+        <span class="help-block"><div id="idSucheForm:j_idt110" aria-live="polite" class="ui-message"></div>
+        </span>
+    </div>
+    <div class="form-group"><label id="idSucheForm:j_idt113" class="ui-outputlabel ui-widget control-label col-sm-2" for="idSucheForm:idPerson">Person</label>
+		<div class="col-sm-6"><input id="idSucheForm:idPerson" name="idSucheForm:idPerson" type="text" value="Dieter Zobel" placeholder="Search for person" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false">
+        </div>
+        <span class="help-block"><div id="idSucheForm:j_idt116" aria-live="polite" class="ui-message"></div>
+        </span>
+    </div><div id="idSucheForm:panel" class="ui-accordion ui-widget ui-helper-reset ui-hidden-container" role="tablist" data-widget="widget_idSucheForm_panel"><h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false"><span class="ui-icon ui-icon-triangle-1-e"></span><a href="#" tabindex="-1">Additional search criteria</a></h3><div id="idSucheForm:panel:j_idt118" class="ui-accordion-content ui-helper-reset ui-widget-content ui-helper-hidden" role="tabpanel" aria-hidden="true">
+        <div class="form-group topDivSelectOneMenu">
+            <div class="col-sm-6"><div id="idSucheForm:panel:idRechtsform" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all ui-helper-clearfix form-control"><div class="ui-helper-hidden-accessible"><select id="idSucheForm:panel:idRechtsform_input" name="idSucheForm:panel:idRechtsform_input"><option value=""></option><option value="11111111-1111-1111-1111-111111111101">Sole proprietorship</option><option value="72d4e607-8be9-43ff-8e68-a9c8320b44c7">General partnership</option><option value="11111111-1111-1111-1111-111111111103">Limited or Corporation</option><option value="11111111-1111-1111-1111-111111111104">Limited liability company</option><option value="11111111-1111-1111-1111-111111111105">Cooperative</option><option value="11111111-1111-1111-1111-111111111106">Association</option><option value="11111111-1111-1111-1111-111111111107">Foundation</option><option value="11111111-1111-1111-1111-111111111108">Special legal forms</option><option value="11111111-1111-1111-1111-111111111109">swiss branch</option><option value="11111111-1111-1111-1111-111111111110">Limited partnership</option><option value="11111111-1111-1111-1111-111111111111">foreign branch</option><option value="11111111-1111-1111-1111-111111111112">Limited partnership per shares</option><option value="11111111-1111-1111-1111-111111111113">Institut</option><option value="11111111-1111-1111-1111-111111111114">Indivision</option><option value="11111111-1111-1111-1111-111111111115">Investmentgesellschaft mit variablem Kapital (SICAV)</option><option value="11111111-1111-1111-1111-111111111116">Investmentgesellschaft mit festem Kapital (SICAF)</option><option value="11111111-1111-1111-1111-111111111117">Société en commandite de placements collectifs</option><option value="11111111-1111-1111-1111-111111111118">Procuration non commerciale</option></select></div><div class="ui-helper-hidden-accessible"><input id="idSucheForm:panel:idRechtsform_focus" name="idSucheForm:panel:idRechtsform_focus" type="text"></div><label id="idSucheForm:panel:idRechtsform_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s"></span></div></div>
+            </div>
+            <span class="help-block"><div id="idSucheForm:panel:j_idt123" aria-live="polite" class="ui-message"></div>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6 input-group">
+                <span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span><span id="idSucheForm:panel:idSitz" class="ui-autocomplete fvFirmaAutocomplete"><input id="idSucheForm:panel:idSitz_input" name="idSucheForm:panel:idSitz_input" type="text" class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all" autocomplete="off" value="" placeholder="Domicile" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"><input id="idSucheForm:panel:idSitz_hinput" name="idSucheForm:panel:idSitz_hinput" type="hidden" autocomplete="off"></span>
+            </div>
+            <span class="help-block"><div id="idSucheForm:panel:j_idt126" aria-live="polite" class="ui-message"></div>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6 input-group">
+                <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span><span id="idSucheForm:panel:idShabDatum" class="fvFirmaAutocomplete"><input id="idSucheForm:panel:idShabDatum_input" name="idSucheForm:panel:idShabDatum_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all hasDatepicker" placeholder="SOGC date" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"></span>
+            </div>
+            <span class="help-block"><div id="idSucheForm:panel:j_idt129" aria-live="polite" class="ui-message"></div>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6"><input id="idSucheForm:panel:idShabNummer" name="idSucheForm:panel:idShabNummer" type="text" placeholder="SOGC publication number" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false">
+            </div>
+            <span class="help-block"><div id="idSucheForm:panel:j_idt132" aria-live="polite" class="ui-message"></div>
+            </span>
+        </div>
+        <div class="form-group topDivSelectOneMenu"><label id="idSucheForm:panel:j_idt135" class="ui-outputlabel ui-widget control-label col-sm-12" for="idSucheForm:panel:idDiverseSuchtext">Search key</label>
+            <div class="col-sm-12"><div id="idSucheForm:panel:idDiversePanel" class="ui-outputpanel ui-widget"><div id="idSucheForm:panel:idDiverseTyp" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all ui-helper-clearfix form-control"><div class="ui-helper-hidden-accessible"><select id="idSucheForm:panel:idDiverseTyp_input" name="idSucheForm:panel:idDiverseTyp_input"><option value=""></option><option value="EINTRAGUNGSDATUM">Entry date</option><option value="LOESCHUNGSDATUM">Deletion date</option><option value="STATUTENDATUM">Date of articles of association</option><option value="DOMIZIL_ADRESSE">Domiziladresse</option><option value="ZWECK">Purpose</option><option value="VINKULIERUNG">Restriction of transferability</option><option value="STATUTARISCHE_VORRECHTE">Statutory prerogatives</option><option value="MITTEILUNGEN">Notifications</option><option value="BEMERKUNGEN">Remarks</option><option value="ANGABEN_ZUR_ZWEIGNIEDERLASSUNG">Details concerning the subsidiary</option><option value="ORGANISATION">Organisation</option><option value="QUALIFIZIERTE_TATBESTAENDE">Qualified facts</option><option value="GENUSSSCHEINE">Participation certificates</option><option value="FUSIONSPALTUNG">Merger / demerger</option><option value="PUBLIKATIONSORGAN">Publication organ</option><option value="AUFSICHTSBEHOERDE">Supervisory authority</option><option value="BEMERKUNGEN_ZUM_KAPITAL">Remarks concerning capital</option><option value="FIRMA_HAUPTSITZ">Subsidiary: company head office</option><option value="RECHTSFORM_HAUPTSITZ">Subsidiary: legal form head office</option><option value="HAUPTSITZ">Subsidiary: head office</option><option value="REGISTRIERUNG_HAUPTSITZ">Subsidiary: entry at head office</option></select></div><div class="ui-helper-hidden-accessible"><input id="idSucheForm:panel:idDiverseTyp_focus" name="idSucheForm:panel:idDiverseTyp_focus" type="text"></div><label id="idSucheForm:panel:idDiverseTyp_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s"></span></div></div>
+
+                    <div class="input-group fullWidth defaultPaddingTop"><input id="idSucheForm:panel:idDiverseSuchtext" name="idSucheForm:panel:idDiverseSuchtext" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false">
+
+                    </div></div>
+            </div>
+            <span class="help-block"><div id="idSucheForm:panel:j_idt142" aria-live="polite" class="ui-message"></div><div id="idSucheForm:panel:j_idt143" aria-live="polite" class="ui-message"></div><div id="idSucheForm:panel:j_idt144" aria-live="polite" class="ui-message"></div>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-12" for="idShabNummer">Application area of search criteria</label>
+            <div class="col-sm-12"><div id="idSucheForm:panel:j_idt147" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="idSucheForm:panel:j_idt147_input" name="idSucheForm:panel:j_idt147_input" type="checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-c"></span></div><span class="ui-chkbox-label">also search for deleted companies</span></div><div id="idSucheForm:panel:j_idt148" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="idSucheForm:panel:j_idt148_input" name="idSucheForm:panel:j_idt148_input" type="checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-c"></span></div><span class="ui-chkbox-label">search also in previous company names</span></div><div id="idSucheForm:panel:j_idt149" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="idSucheForm:panel:j_idt149_input" name="idSucheForm:panel:j_idt149_input" type="checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-c"></span></div><span class="ui-chkbox-label">also search for deleted persons</span></div><div id="idSucheForm:panel:j_idt150" class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="idSucheForm:panel:j_idt150_input" name="idSucheForm:panel:j_idt150_input" type="checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-c"></span></div><span class="ui-chkbox-label">also search in transfers</span></div>
+
+                
+                
+                
+                
+            </div>
+        </div></div><input type="hidden" id="idSucheForm:panel_active" name="idSucheForm:panel_active" value="-1"></div>
+
+			<div class="form-group clear defaultPaddingTop">
+				<div class="col-sm-12"><div id="idSucheForm:j_idt153" class="ui-toolbar ui-widget ui-widget-header ui-corner-all ui-helper-clearfix"><div class="ui-toolbar-group-left"><button id="idSucheForm:j_idt155" name="idSucheForm:j_idt155" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left btn btn-primary" onclick="this.disabled=true;;PrimeFaces.ab({source:'idSucheForm:j_idt155',update:'idSucheForm',oncomplete:function(xhr,status,args){this.disabled=false;;}});return false;" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-search"></span><span class="ui-button-text ui-c">Search</span></button><img id="idSucheForm:j_idt156" alt="" src="/cr-portal/javax.faces.resource/spacer/dot_clear.gif.xhtml?ln=primefaces&amp;v=4.0"><button id="idSucheForm:j_idt157" name="idSucheForm:j_idt157" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left btn btn-default" onclick="PrimeFaces.ab({source:'idSucheForm:j_idt157',process:'idSucheForm:j_idt157',update:'idSucheForm',resetValues:true});return false;" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-refresh"></span><span class="ui-button-text ui-c">Reset search criteria</span></button></div></div>
+				</div>
+			</div><div id="idSucheForm:resultTable" class="ui-datatable ui-widget ui-datatable-resizable"><div class="ui-datatable-tablewrapper"><table role="grid" class="table-responsive table-striped table-hover searchResultTable"><thead id="idSucheForm:resultTable_head"><tr role="row"><th id="idSucheForm:resultTable:j_idt162" class="ui-state-default ui-sortable-column ui-filter-column ui-resizable-column col-md-2" role="columnheader" style="width: 245px;"><span class="ui-column-resizer ui-draggable" style="position: relative;">&nbsp;</span><span><label id="idSucheForm:resultTable:j_idt163" class="ui-outputlabel ui-widget">UID company identification number</label></span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><input id="idSucheForm:resultTable:j_idt162:filter" name="idSucheForm:resultTable:j_idt162:filter" class="ui-column-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterStyle" value="" autocomplete="off" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"></th><th id="idSucheForm:resultTable:j_idt165" class="ui-state-default ui-sortable-column ui-filter-column ui-resizable-column col-md-4" role="columnheader" style="width: 160px;"><span class="ui-column-resizer ui-draggable" style="position: relative;">&nbsp;</span><span><label id="idSucheForm:resultTable:j_idt166" class="ui-outputlabel ui-widget">Company</label></span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><input id="idSucheForm:resultTable:j_idt165:filter" name="idSucheForm:resultTable:j_idt165:filter" class="ui-column-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterStyle" value="" autocomplete="off" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"></th><th id="idSucheForm:resultTable:j_idt168" class="ui-state-default ui-sortable-column ui-filter-column ui-resizable-column col-md-2" role="columnheader" style="width: 83px;"><span class="ui-column-resizer ui-draggable" style="position: relative;">&nbsp;</span><span><label id="idSucheForm:resultTable:j_idt169" class="ui-outputlabel ui-widget">Domicile</label></span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><input id="idSucheForm:resultTable:j_idt168:filter" name="idSucheForm:resultTable:j_idt168:filter" class="ui-column-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterStyle" value="" autocomplete="off" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"></th><th id="idSucheForm:resultTable:j_idt171" class="ui-state-default ui-sortable-column ui-filter-column ui-resizable-column col-md-3" role="columnheader" style="width: 65px;"><span class="ui-column-resizer ui-draggable" style="position: relative;">&nbsp;</span><span><label id="idSucheForm:resultTable:j_idt172" class="ui-outputlabel ui-widget">Legal form</label></span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><input id="idSucheForm:resultTable:j_idt171:filter" name="idSucheForm:resultTable:j_idt171:filter" class="ui-column-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterStyle" value="" autocomplete="off" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"></th><th id="idSucheForm:resultTable:j_idt174" class="ui-state-default ui-resizable-column col-md-2" role="columnheader" style="width: 30px;"><span class="ui-column-resizer ui-draggable" style="display: none; position: relative;">&nbsp;</span><span></span></th></tr></thead><tfoot></tfoot><tbody id="idSucheForm:resultTable_data" class="ui-datatable-data ui-widget-content"><tr data-ri="0" data-rk="cfbc3c53-8dc3-42e3-be22-a667aa5ff064" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="col-md-2">CHE-102.210.951</td><td role="gridcell" class="col-md-4">Alcor Chemie Holding AG</td><td role="gridcell" class="col-md-2">Baar</td><td role="gridcell" class="col-md-3">Limited or Corporation</td><td role="gridcell" class="col-md-2"><button id="idSucheForm:resultTable:0:auszugLink" name="idSucheForm:resultTable:0:auszugLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only auszugLink" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:0:auszugLink',update:'firmaAuszugPanel'});return false;" title="Display extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-file-text-o"></span><span class="ui-button-text ui-c">ui-button</span></button><button id="idSucheForm:resultTable:0:j_idt175" name="idSucheForm:resultTable:0:j_idt175" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:0:j_idt175',update:'firmaAuszugPanel'});return false;" title="Print extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-pdf"></span><span class="ui-button-text ui-c">ui-button</span></button><a href="/cr-portal/bestellungen/bestellungen.xhtml?uid=CHE-102.210.951&amp;loeschung=" title="Orders">
+					<i class="fa fa-shopping-cart"></i></a></td></tr><tr data-ri="1" data-rk="aebcc7c0-c81c-47d7-9b70-5677bd1ba7e3" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="col-md-2">CHE-422.048.448</td><td role="gridcell" class="col-md-4">baarcity GmbH</td><td role="gridcell" class="col-md-2">Baar</td><td role="gridcell" class="col-md-3">Limited liability company</td><td role="gridcell" class="col-md-2"><button id="idSucheForm:resultTable:1:auszugLink" name="idSucheForm:resultTable:1:auszugLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only auszugLink" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:1:auszugLink',update:'firmaAuszugPanel'});return false;" title="Display extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-file-text-o"></span><span class="ui-button-text ui-c">ui-button</span></button><button id="idSucheForm:resultTable:1:j_idt175" name="idSucheForm:resultTable:1:j_idt175" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:1:j_idt175',update:'firmaAuszugPanel'});return false;" title="Print extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-pdf"></span><span class="ui-button-text ui-c">ui-button</span></button><a href="/cr-portal/bestellungen/bestellungen.xhtml?uid=CHE-422.048.448&amp;loeschung=" title="Orders">
+					<i class="fa fa-shopping-cart"></i></a></td></tr><tr data-ri="2" data-rk="736912e9-f7b3-4f2c-885b-6a2821114fa8" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="col-md-2">CHE-109.024.496</td><td role="gridcell" class="col-md-4">SHA Seminar Hotel AG</td><td role="gridcell" class="col-md-2">Unterägeri</td><td role="gridcell" class="col-md-3">Limited or Corporation</td><td role="gridcell" class="col-md-2"><button id="idSucheForm:resultTable:2:auszugLink" name="idSucheForm:resultTable:2:auszugLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only auszugLink" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:2:auszugLink',update:'firmaAuszugPanel'});return false;" title="Display extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-file-text-o"></span><span class="ui-button-text ui-c">ui-button</span></button><button id="idSucheForm:resultTable:2:j_idt175" name="idSucheForm:resultTable:2:j_idt175" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:2:j_idt175',update:'firmaAuszugPanel'});return false;" title="Print extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-pdf"></span><span class="ui-button-text ui-c">ui-button</span></button><a href="/cr-portal/bestellungen/bestellungen.xhtml?uid=CHE-109.024.496&amp;loeschung=" title="Orders">
+					<i class="fa fa-shopping-cart"></i></a></td></tr><tr data-ri="3" data-rk="45ce5d55-8610-407c-9c39-73ae8b6fd46f" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell" class="col-md-2">CHE-104.841.654</td><td role="gridcell" class="col-md-4">Zobel Verwaltungs GmbH</td><td role="gridcell" class="col-md-2">Baar</td><td role="gridcell" class="col-md-3">Limited liability company</td><td role="gridcell" class="col-md-2"><button id="idSucheForm:resultTable:3:auszugLink" name="idSucheForm:resultTable:3:auszugLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only auszugLink" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:3:auszugLink',update:'firmaAuszugPanel'});return false;" title="Display extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-file-text-o"></span><span class="ui-button-text ui-c">ui-button</span></button><button id="idSucheForm:resultTable:3:j_idt175" name="idSucheForm:resultTable:3:j_idt175" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" onclick="PrimeFaces.ab({source:'idSucheForm:resultTable:3:j_idt175',update:'firmaAuszugPanel'});return false;" title="Print extract" type="submit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-pdf"></span><span class="ui-button-text ui-c">ui-button</span></button><a href="/cr-portal/bestellungen/bestellungen.xhtml?uid=CHE-104.841.654&amp;loeschung=" title="Orders">
+					<i class="fa fa-shopping-cart"></i></a></td></tr></tbody></table></div><div id="idSucheForm:resultTable_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header"><span class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-first">p</span></span><span class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-prev">p</span></span><span class="ui-paginator-pages"><span class="ui-paginator-page ui-state-default ui-state-active ui-corner-all">1</span></span><span class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-next">p</span></span><span class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-end">p</span></span></div><div class="ui-datatable-footer ui-widget-header ui-corner-bottom">
+				No. of companies found: 4
+				</div><input type="hidden" id="idSucheForm:resultTable_selection" name="idSucheForm:resultTable_selection" autocomplete="off" value=""><div class="ui-column-resizer-helper ui-state-highlight"></div></div>
+<input type="hidden" name="javax.faces.ViewState" value="4127173450772461269:-8387170814492735491" autocomplete="off"></form>
+            </div></div>
+
+    <footer id="footer">
+
+        <div class="container">
+            <div class="footerRow">
+                <div class="col-md-3">
+                    <div class="small center-to-left">
+                        <address>
+                            <strong><label id="j_idt187" class="ui-outputlabel ui-widget">Commercial register of canton Zug</label></strong>
+                            <p><label id="j_idt189" class="ui-outputlabel ui-widget">Aabachstrasse 5</label></p>
+                            <p><label id="j_idt191" class="ui-outputlabel ui-widget">6301 Zug</label></p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="small center-to-left">
+                        <strong><label id="j_idt193" class="ui-outputlabel ui-widget">Office hours</label></strong>
+                        <p><label id="j_idt195" class="ui-outputlabel ui-widget">08:00 - 11:45 / 14:00 - 17:00 Uhr</label></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="small center-to-left">
+                        
+                        <p>
+                            <i class="fa fa-phone"></i><label id="j_idt197" class="ui-outputlabel ui-widget" title="Telephone:">+41 41 728 55 60</label>
+                        </p>
+
+                        
+                        <p>
+                            <i class="fa fa-fax"></i><label id="j_idt199" class="ui-outputlabel ui-widget" title="Fax:">+41 41 728 55 69</label>
+                        </p>
+
+                        
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:contact.hra@zg.ch" title="E-mail">contact.hra@zg.ch</a><label id="j_idt201" class="ui-outputlabel ui-widget">&nbsp;</label>
+                        </p>
+
+                        
+                        <p>
+                            <i class="fa fa-home"></i>
+                            <a href="http://www.hrazg.ch/" title="Internet page">http://www.hrazg.ch/</a><label id="j_idt203" class="ui-outputlabel ui-widget">&nbsp;</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="small center-to-left">
+                        <p class="link-margin-bottom "><a href="/cr-portal/datenschutz/datenschutz_en.xhtml;jsessionid=3e39718e9d33b120d32f3268a725" title="privacy policy">
+                                <span>privacy policy</span></a>
+                        </p>
+
+                        <p class="link-margin-bottom "><a href="/cr-portal/impressum/impressum.xhtml;jsessionid=3e39718e9d33b120d32f3268a725" title="Publisher's details">
+                                <span>Publisher's details</span></a>
+                        </p>
+
+                        <p><label id="j_idt211" class="ui-outputlabel ui-widget">Implemented by</label>
+                            <a href="http://dvbern.ch">DV Bern AG</a><label id="j_idt213" class="ui-outputlabel ui-widget" style="padding-left: 4px;">/</label>
+                                <a href="mailto:info@chregister.ch">
+                                    Technical support</a>
+                        </p>
+
+                       <p class="hidden">
+                            v1.8.15.102.3_25.09.2019 14:51:47.910
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="footerVersion">
+            <p>
+                v1.8.15.102.3
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			if (window.localStorage.cookieAccepted != "true") {
+				PF('cookieMsg').show();
+            }
+		});
+    </script><script type="text/javascript" src="/cr-portal/javax.faces.resource/bootstrap/js/bootstrap.min.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"></script><script type="text/javascript" src="/cr-portal/javax.faces.resource/bootstrap/assets/js/ie10-viewport-bug-workaround.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"></script>
+
+    <script type="text/javascript">
+        function areCookiesSupported() {
+            if (navigator.cookieEnabled == false) {
+                if (location.pathname.indexOf("no-cookies") == -1) {
+                    window.location = "/cr-portal/no-cookies.xhtml";
+                }
+            }
+        }
+        window.onload = areCookiesSupported();
+
+        function reloadPageAfterLanguageChange() {
+            window.location.reload();
+        }
+    </script><script type="text/javascript" src="/cr-portal/javax.faces.resource/js/cr-business-web-portal.min.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"></script><script type="text/javascript" src="/cr-portal/javax.faces.resource/js/cr-business-web-core.min.js.xhtml;jsessionid=3e39718e9d33b120d32f3268a725?ln=default"></script>
+
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div class="ui-dialog-docking-zone"></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div id="j_idt182" class="ui-notificationbar ui-widget ui-widget-content" style="background-color: white; border-top: 1px solid black; height: auto; bottom: 0px; display: none;">
+            <div class="col-md-10">
+                This site uses cookies. We only use technically necessary cookies without which the website does not work - you can find more information about this and your rights as a user in our privacy policy. By using the website you accept our cookies.  <a href="/cr-portal/datenschutz/datenschutz_en.xhtml">Mehr erfahren.</a>
+            </div>
+            <div class="col-md"><button id="j_idt184" name="j_idt184" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn btn-default" onclick="PF('cookieMsg').hide(); window.localStorage.cookieAccepted = true;;PrimeFaces.ab({source:'j_idt184'});return false;" style="float: right; margin-right: 15px" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">OK</span></button>
+            </div></div><div id="idSucheForm:panel:idRechtsform_panel" class="ui-selectonemenu-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-filter-container"><input class="ui-selectonemenu-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" id="idSucheForm:panel:idRechtsform_filter" name="idSucheForm:panel:idRechtsform_filter" type="text" autocomplete="off" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"><span class="ui-icon ui-icon-search"></span></div><div class="ui-selectonemenu-items-wrapper" style="height:200px"><ul class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all ui-state-highlight" data-label="&amp;nbsp;">&nbsp;</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Sole proprietorship">Sole proprietorship</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="General partnership">General partnership</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Limited or Corporation">Limited or Corporation</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Limited liability company">Limited liability company</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Cooperative">Cooperative</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Association">Association</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Foundation">Foundation</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Special legal forms">Special legal forms</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="swiss branch">swiss branch</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Limited partnership">Limited partnership</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="foreign branch">foreign branch</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Limited partnership per shares">Limited partnership per shares</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Institut">Institut</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Indivision">Indivision</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Investmentgesellschaft mit variablem Kapital (SICAV)">Investmentgesellschaft mit variablem Kapital (SICAV)</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Investmentgesellschaft mit festem Kapital (SICAF)">Investmentgesellschaft mit festem Kapital (SICAF)</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Société en commandite de placements collectifs">Société en commandite de placements collectifs</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Procuration non commerciale">Procuration non commerciale</li></ul></div></div><div id="idSucheForm:panel:idSitz_panel" class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"></div><div id="idSucheForm:panel:idDiverseTyp_panel" class="ui-selectonemenu-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-filter-container"><input class="ui-selectonemenu-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" id="idSucheForm:panel:idDiverseTyp_filter" name="idSucheForm:panel:idDiverseTyp_filter" type="text" autocomplete="off" role="textbox" aria-disabled="false" aria-readonly="false" aria-multiline="false"><span class="ui-icon ui-icon-search"></span></div><div class="ui-selectonemenu-items-wrapper" style="height:200px"><ul class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all ui-state-highlight" data-label="&amp;nbsp;">&nbsp;</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Entry date">Entry date</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Deletion date">Deletion date</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Date of articles of association">Date of articles of association</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Domiziladresse">Domiziladresse</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Purpose">Purpose</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Restriction of transferability">Restriction of transferability</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Statutory prerogatives">Statutory prerogatives</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Notifications">Notifications</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Remarks">Remarks</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Details concerning the subsidiary">Details concerning the subsidiary</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Organisation">Organisation</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Qualified facts">Qualified facts</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Participation certificates">Participation certificates</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Merger / demerger">Merger / demerger</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Publication organ">Publication organ</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Supervisory authority">Supervisory authority</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Remarks concerning capital">Remarks concerning capital</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Subsidiary: company head office">Subsidiary: company head office</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Subsidiary: legal form head office">Subsidiary: legal form head office</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Subsidiary: head office">Subsidiary: head office</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Subsidiary: entry at head office">Subsidiary: entry at head office</li></ul></div></div></body></html>
